@@ -1,15 +1,42 @@
+<!--projects.ejs - Matthew Mikhaiel - 301229715 - 2022-06-03-->
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
 
 <!--Main content-->
 <Main class="container">
-  <div class="p-3 mb-2 bg-light text-dark">
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>This is the projects page</p>
+<div class="card-group">
+
+  <div class="card text-bg-dark mb-3" style="width: 18rem;">
+  <img src="../Assets/images/weatherapi.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Weather API</h5>
+    <p class="card-text">This was a really fun project to do as it was the first API-key related project I have done.  While I was making this project I also think my network was hacked as my location was reloacted to a random city in Russia.</p>
+    
+  </div>
+  
+</div>
+
+<div class="card text-bg-dark mb-3" style="width: 18rem;">
+  <img src="../Assets/images/js3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Photo albumn Assignment</h5>
+    <p class="card-text">This project was a Javascript project to rotate through photos.  It was a nice project to make as it showcases the new city I live in.</p>
+    
+  </div>
+</div>
+
+<div class="card text-bg-dark mb-3" style="width: 18rem;">
+  <img src="../Assets/images/a2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">First HTML and CSS Assignment</h5>
+    <p class="card-text">This was the first assignment I created using both HTML and CSS.  It was made using HTML with external CSS.  We had to create a fan website of your favourite sports team, so I chose Scuderia Ferrari F1 Team.</p>
+    
+  </div>
+</div>
 </div>
 </Main>
+
 <%- include partials/bottom_nav.ejs %>
 
 <%- include partials/footer.ejs%>

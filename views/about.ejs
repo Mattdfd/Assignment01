@@ -1,3 +1,4 @@
+<!--about.ejs - Matthew Mikhaiel - 301229715 - 2022-06-03-->
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
@@ -6,8 +7,16 @@
 <Main class="container">
   <div class="p-3 mb-2 bg-light text-dark">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>This is the about page</p>
+    <br>
+    <img class="propic" src="../assets/images/profilepicture.jpeg" alt="me">
+    <h2>Matthew Mikhaiel</h2>
+    <p>I am a 31 year old, currently living in Stockholm, Sweden.  I hold a Criminology degree but spent most of my career in the interior design industry. <br>
+    I am pursuing my interests in computer technology, and am trying to make a career change.  I am interested in finding an entry level position in a exciting <br>
+  and fast-paced company, to learn addition skills to enhance my learning process.</p>
+
+  <p><form method="get" action="../assets/files/Matthew-Mikhaiel_CV.pdf">
+    <button type="submit">View CV</button>
+ </form></p>
 </div>
 </Main>
 <%- include partials/bottom_nav.ejs %>

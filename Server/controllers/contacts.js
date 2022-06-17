@@ -5,7 +5,7 @@ let mongoose = require('mongoose');
 let jwt = require('jsonwebtoken');
 
 // create a reference to the model
-let contact = require('./models/bcontact');
+let contact = require('../models/bcontact');
 
 
 module.exports.displayContactList = (req, res, next) => {
@@ -18,7 +18,7 @@ module.exports.displayContactList = (req, res, next) => {
         {
            
 
-            res.render('bContactList', 
+            res.render('contact/bContactList', 
             {title: 'Contact List', 
             ContactList: contactList, 
             displayName: req.user ? req.user.displayName : ''});      
@@ -27,19 +27,19 @@ module.exports.displayContactList = (req, res, next) => {
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('views/add', {title: 'Add Contact', 
+    res.render('contact/add', {title: 'Add Contact', 
     displayName: req.user ? req.user.displayName : ''})          
 }
 
 module.exports.processAddPage = (req, res, next) => {
-    let newBook = Book({
+    let newcontact = Contact({
         "name": req.body.name,
         "number": req.body.number,
         "email": req.body.email,
     
     });
 
-    Book.create(newContact, (err, Contact) =>{
+    Contact.create(newContact, (err, Contact) =>{
         if(err)
         {
             console.log(err);

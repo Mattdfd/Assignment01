@@ -81,14 +81,7 @@ module.exports.processLoginPage = (req, res, next) => {
                 expiresIn: 604800 
             });
 
-            /* TODO - Getting Ready to convert to API
-            res.json({success: true, msg: 'User Logged in Successfully!', user: {
-                id: user._id,
-                displayName: user.displayName,
-                username: user.username,
-                email: user.email
-            }, token: authToken});
-            */
+           
 
             return res.redirect('/contact-list');
         });

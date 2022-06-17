@@ -31,6 +31,15 @@ router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
+/* GET business Contacts page. */
+router.get('/bcontact', function(req, res, next) {
+  res.render('bContactList', { title: 'Business Contacts' });
+});
+
+/* GET business Contacts page. */
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Login' });
+});
 
 
 

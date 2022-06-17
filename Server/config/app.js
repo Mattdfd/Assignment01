@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 //setup express session
 app.use(session({
-  secret: "SomeSecret",
+  secret: "assignment2",
   saveUninitialized: false,
   resave: false
 }));
@@ -96,7 +96,7 @@ passport.use(strategy);
 // routing
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/book-list', contactRouter);
+app.use('/contact-list', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -90,7 +90,7 @@ module.exports.processLoginPage = (req, res, next) => {
             }, token: authToken});
             */
 
-            return res.redirect('/book-list');
+            return res.redirect('/contact-list');
         });
     })(req, res, next);
 }

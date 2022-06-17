@@ -32,7 +32,7 @@ module.exports.displayAddPage = (req, res, next) => {
 }
 
 module.exports.processAddPage = (req, res, next) => {
-    let newcontact = Contact({
+    let newContact = Contact({
         "name": req.body.name,
         "number": req.body.number,
         "email": req.body.email,
@@ -47,7 +47,7 @@ module.exports.processAddPage = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
+            // refresh the contact list
             res.redirect('/Contact-list');
         }
     });
@@ -75,7 +75,7 @@ module.exports.displayEditPage = (req, res, next) => {
 module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id
 
-    let updatedBook = Book({
+    let updatedContact = Book({
         "_id": id,
         "name": req.body.name,
         "number": req.body.number,
@@ -90,7 +90,7 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
+            // refresh the contact list
             res.redirect('/Contact-list');
         }
     });
@@ -107,7 +107,7 @@ module.exports.performDelete = (req, res, next) => {
         }
         else
         {
-             // refresh the book list
+             // refresh the contact list
              res.redirect('/contact-list');
         }
     });

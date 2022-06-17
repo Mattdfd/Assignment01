@@ -16,9 +16,9 @@ module.exports.displayContactList = (req, res, next) => {
         }
         else
         {
-           
+            
 
-            res.render('contact/bContactList', 
+            res.render('contact-list', 
             {title: 'Contact List', 
             ContactList: contactList, 
             displayName: req.user ? req.user.displayName : ''});      
@@ -91,7 +91,7 @@ module.exports.processEditPage = (req, res, next) => {
         else
         {
             // refresh the contact list
-            res.redirect('/Contact-list');
+            res.redirect('../../bContactList');
         }
     });
 }
